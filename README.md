@@ -3,6 +3,16 @@
 
 ## Hiding Messages in a Midi
 
+You can check the midi file structure [here](http://www.music.mcgill.ca/~ich/classes/mumt306/StandardMIDIfileformat.html). To give a short brief, a midi song follows this structure:
+
+* Pattern
+  * Track
+    * ProgramChangeEvent
+    * NoteOn
+    * NoteOff
+
+The pattern indicates the root of the song, you have a Track for each instrument in the Pattern. The notes events indicates notes on each instrument, so this events can be listened when the song is played. On the other hand the ProgramChangeEvent indicates which instrument is going to be used on this track, so according to the value you give to this event you select a guitar or a banjo. But the ProgramChangeEvent is not perceptible, so you can have many events of this kind and none of them will alter the song until a note event appears. 
+
 What do you need:
 
 * [python-midi](https://github.com/vishnubob/python-midi)

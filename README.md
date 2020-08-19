@@ -36,11 +36,11 @@ As can be seen each ProgramChangeEvent with a message char is appended to the tr
 Once you installed python-midi you can execute each script on this way:
 
 ```bash
-python steganography.py  /path/to/file.mid "Your message goes here"
+python3 steganography.py  /path/to/file.mid "Your message goes here"
 ```
 
 The scripts creates a file named hidden_message.mid, to show the message you execute:
 
 ```bash
-python steganography_show.py hidden_message.mid
+python3 steganography_show.py hidden_message.mid
 ```

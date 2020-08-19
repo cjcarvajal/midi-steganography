@@ -16,7 +16,7 @@ def hide_message(song,message):
 
 	for track in pattern:
 		for event in track:
-	 		if isinstance(event,midi.events.ProgramChangeEvent):
+			if isinstance(event,midi.events.ProgramChangeEvent):
 				actual_change = event
 				
 				for ascii in ascii_chars:

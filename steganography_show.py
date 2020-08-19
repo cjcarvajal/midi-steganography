@@ -31,4 +31,4 @@ def get_hidden_message_events(song):
 
 # Receives the song with the hidden message and extract the message
 event_messages = get_hidden_message_events(sys.argv[1])
-print message_to_ascii (event_messages)
+print (message_to_ascii(event_messages))
